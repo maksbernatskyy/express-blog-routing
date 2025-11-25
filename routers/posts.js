@@ -4,12 +4,12 @@ const postsArr = require('../public/postsArr')
 
 // index
 router.get('/', (req, res) => {
-    res.send('Show all posts')
+    res.json('Show all posts')
 })
 
 // show
 router.get('/:id', (req, res) => {
-    res.send(`Show the post with id: ${req.params.id}`)
+    res.json(`Show the post with id: ${req.params.id}`)
 })
 
 // delete
